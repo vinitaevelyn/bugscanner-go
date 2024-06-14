@@ -11,7 +11,7 @@ import (
 
 var cfgFile string
 
-// rootCmd represents the base command when called without any subcommands
+// rootCmd represents the base commands when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "bugscanner-go",
 	Short: "This tool is dedicated to DARKTUNNEL.NET, please support us if you find this tool useful.",
