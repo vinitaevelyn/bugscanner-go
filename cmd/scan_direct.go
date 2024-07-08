@@ -115,10 +115,14 @@ func scanDirect(c *queuescanner.Ctx, p *queuescanner.QueueScannerScanParams) {
 				resColor = colorG1
 			case "akamaighost":
 				resColor = colorY1
+			case "varnish":
+				resColor = colorM1
+			case "fastly":
+				resColor = colorM1
 			case "amazons3":
 				resColor = colorL1
 			case "awselb/2.0":
-				resColor = colorK1
+				resColor = colorR1
 			case "cloudfront":
 				resColor = colorC1
 			default:
@@ -181,6 +185,8 @@ func scanDirectRun(cmd *cobra.Command, args []string) {
 		serverList = []string{
 			"cloudflare",
 			"cloudfront",
+			"varnish",
+			"fastly",
 			"amazons3",
 			"awselb/2.0",
 			"akamaighost",
